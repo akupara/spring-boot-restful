@@ -1,0 +1,18 @@
+spring:
+  flyway:
+    out-of-order: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/restdemo?useSSL=false
+    username: root
+    password: welcome
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+spring.jpa.properties:
+  hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
